@@ -1,8 +1,19 @@
 <?php
 	$car = new car;
-	$car->model = 'ford';
 	print_r($car);
 	
-	class car {}
+	echo $car->make;
+	
+	abstract class car {
+		protected $engine;
+		protected $wheels;
+		protected $doors;
+		protected $length;
+		protected $weight;
+		protected $color;
+	}
+	
+	class ford extends car{}
+	class taurus extends for{}
 
 ?>
